@@ -4,18 +4,10 @@ import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { 
   Calendar, 
-  Clock, 
   CheckCircle, 
-  Star, 
-  Users, 
-  MessageSquare,
-  Phone,
-  Mail,
-  Gift
+  Star
 } from "lucide-react";
 
 export function BookingSection() {
@@ -71,35 +63,8 @@ export function BookingSection() {
     }
   ];
 
-  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
-
   const handlePackageSelect = (packageName: string) => {
     setFormData(prev => ({ ...prev, preferredPackage: packageName }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!formData.name || !formData.phone) {
-      alert("Please fill in your name and phone number so Dr. Deepti can contact you.");
-      return;
-    }
-
-    // Show contact information instead of form submission
-    alert(`Thank you ${formData.name}! 
-
-To schedule your FREE consultation, please:
-
-📞 Call: (555) 123-4567
-📧 Email: deepti@mentalfitnesssolutions.com
-💬 Text: Send your name and preferred time
-
-Dr. Deepti will personally respond within 24 hours.
-
-Preferred Package: ${formData.preferredPackage || 'Not specified'}`);
   };
 
   return (

@@ -9,7 +9,6 @@ import {
   Heart, 
   Users, 
   TrendingUp, 
-  Clock, 
   Shield, 
   MessageCircle,
   Lightbulb,

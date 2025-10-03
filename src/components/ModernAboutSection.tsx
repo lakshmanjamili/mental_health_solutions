@@ -3,8 +3,7 @@
 import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { CheckCircle, Award, Heart, Users, Clock, Star, Brain, Sparkles } from "lucide-react";
+import { CheckCircle, Award, Heart, Users, Star, Brain, Sparkles } from "lucide-react";
 import Link from "next/link";
 
 export function ModernAboutSection() {
@@ -221,7 +220,7 @@ export function ModernAboutSection() {
                     whileHover={{ backgroundColor: "rgba(255, 255, 255, 0.15)" }}
                   >
                     <p className="text-white/90 italic">
-                      "Every person deserves to feel understood, supported, and empowered on their journey to mental wellness."
+                      &quot;Every person deserves to feel understood, supported, and empowered on their journey to mental wellness.&quot;
                     </p>
                     <p className="text-white/70 text-sm mt-2">- Dr. Deepti Talluri</p>
                   </motion.div>

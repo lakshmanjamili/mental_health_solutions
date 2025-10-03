@@ -9,7 +9,6 @@ import {
   Heart, 
   Brain, 
   Target, 
-  Shield, 
   Sparkles, 
   ArrowRight,
   Clock,

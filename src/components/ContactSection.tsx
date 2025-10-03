@@ -1,63 +1,14 @@
 "use client";
 
-import { useState } from "react";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Input } from "@/components/ui/input";
-import { Textarea } from "@/components/ui/textarea";
 import { 
-  Mail, 
-  Phone, 
-  MapPin, 
-  Clock, 
-  Instagram, 
-  Twitter, 
-  Send,
-  MessageCircle,
-  Calendar,
-  Heart
+  Mail,
+  Phone
 } from "lucide-react";
 
 export function ContactSection() {
-  const [contactForm, setContactForm] = useState({
-    name: "",
-    email: "",
-    subject: "",
-    message: ""
-  });
-
-  const handleContactChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setContactForm(prev => ({ ...prev, [name]: value }));
-  };
-
-  const handleContactSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    
-    if (!contactForm.name || !contactForm.email || !contactForm.message) {
-      alert("Please fill in all required fields (Name, Email, and Message).");
-      return;
-    }
-
-    // Show thank you message with contact information
-    alert(`Thank you ${contactForm.name}! 
-
-Your message has been received:
-
-Subject: ${contactForm.subject || 'General Inquiry'}
-Message: "${contactForm.message}"
-
-For immediate assistance, please contact us directly:
-
-📞 Call: (555) 123-4567
-📧 Email: deepti@mentalfitnesssolutions.com
-
-Dr. Deepti will personally respond to your inquiry within 24 hours.`);
-
-    // Reset form
-    setContactForm({ name: "", email: "", subject: "", message: "" });
-  };
 
   return (
     <section id="contact" className="section-padding bg-white">
@@ -71,7 +22,7 @@ Dr. Deepti will personally respond to your inquiry within 24 hours.`);
             Get in Touch
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Ready to start your journey to better mental health? We're here to support you every step of the way.
+            Ready to start your journey to better mental health? We&apos;re here to support you every step of the way.
           </p>
         </div>
 
@@ -83,8 +34,8 @@ Dr. Deepti will personally respond to your inquiry within 24 hours.`);
                 Let's Start Your Healing Journey
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
-                Whether you're ready to book a session or have questions about our services, 
-                we're here to help. Reach out today and take the first step toward a healthier, 
+                Whether you&apos;re ready to book a session or have questions about our services, 
+                we&apos;re here to help. Reach out today and take the first step toward a healthier, 
                 more balanced you.
               </p>
             </div>
@@ -133,7 +84,7 @@ Dr. Deepti will personally respond to your inquiry within 24 hours.`);
             Ready to Transform Your Life?
           </h3>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            Don't wait to start your journey to better mental health. 
+            Don&apos;t wait to start your journey to better mental health. 
             Book your free consultation today and discover how we can help you thrive.
           </p>
           <Button 

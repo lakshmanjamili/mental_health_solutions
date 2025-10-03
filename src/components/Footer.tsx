@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Heart, Mail, Phone, Instagram, Twitter, MapPin, Clock } from "lucide-react";
+import { Heart, Mail, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
 
@@ -106,7 +106,7 @@ export function Footer() {
               Website built with ❤️ by Loukri AI Inc.
             </p>
             <p className="text-gray-300">
-              Have an idea? We'll build anything for you.{" "}
+              Have an idea? We&apos;ll build anything for you.{" "}
               <a 
                 href="https://www.loukriai.com" 
                 target="_blank" 

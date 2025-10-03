@@ -8,11 +8,9 @@ import Link from "next/link";
 import { AnimatedBackground } from "./AnimatedBackground";
 
 export function ModernHeroSection() {
-  const [isVisible, setIsVisible] = useState(false);
   const controls = useAnimation();
 
   useEffect(() => {
-    setIsVisible(true);
     controls.start("visible");
   }, [controls]);
 

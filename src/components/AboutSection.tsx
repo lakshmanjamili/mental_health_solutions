@@ -89,7 +89,7 @@ export function AboutSection() {
                 </div>
 
                 <blockquote className="italic text-gray-700 text-center border-l-4 border-purple-600 pl-4">
-                  "My mission is to help you reconnect with your inner strength and live with purpose."
+                  &quot;My mission is to help you reconnect with your inner strength and live with purpose.&quot;
                 </blockquote>
 
                 <div className="mt-6 flex flex-wrap gap-2 justify-center">
