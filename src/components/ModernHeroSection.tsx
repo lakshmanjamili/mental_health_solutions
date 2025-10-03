@@ -36,7 +36,7 @@ export function ModernHeroSection() {
 
   const floatingVariants = {
     animate: {
-      y: [-10, 10, -10],
+      y: [-10, 10],
       transition: {
         duration: 4,
         repeat: Infinity,
@@ -47,7 +47,7 @@ export function ModernHeroSection() {
 
   const pulseVariants = {
     animate: {
-      scale: [1, 1.05, 1],
+      scale: [1, 1.05],
       transition: {
         duration: 2,
         repeat: Infinity,
@@ -66,33 +66,35 @@ export function ModernHeroSection() {
         <motion.div
           className="absolute top-20 left-20 w-64 h-64 bg-purple-400 rounded-full blur-3xl opacity-20"
           animate={{
-            scale: [1, 1.2, 1],
-            x: [0, 50, 0],
-            y: [0, -30, 0],
+            scale: [1, 1.2],
+            x: [0, 50],
+            y: [0, -30],
           }}
           transition={{
-            duration: 8,
+            duration: 4,
             repeat: Infinity,
+            repeatType: "reverse",
             type: "spring", stiffness: 50, damping: 10
           }}
         />
         <motion.div
           className="absolute bottom-20 right-20 w-96 h-96 bg-pink-400 rounded-full blur-3xl opacity-20"
           animate={{
-            scale: [1, 1.3, 1],
-            x: [0, -30, 0],
-            y: [0, 20, 0],
+            scale: [1, 1.3],
+            x: [0, -30],
+            y: [0, 20],
           }}
           transition={{
-            duration: 10,
+            duration: 5,
             repeat: Infinity,
+            repeatType: "reverse",
             type: "spring", stiffness: 50, damping: 10
           }}
         />
         <motion.div
           className="absolute top-1/2 left-1/3 w-48 h-48 bg-blue-400 rounded-full blur-3xl opacity-15"
           animate={{
-            scale: [1, 1.1, 1],
+            scale: [1, 1.1],
             rotate: [0, 180, 360],
           }}
           transition={{
@@ -349,7 +351,7 @@ export function ModernHeroSection() {
             <motion.div
               className="absolute -top-6 -right-6 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center"
               animate={{
-                y: [0, -20, 0],
+                y: [0, -20],
                 rotate: [0, 180, 360],
               }}
               transition={{
@@ -364,12 +366,13 @@ export function ModernHeroSection() {
             <motion.div
               className="absolute -bottom-6 -left-6 w-16 h-16 bg-pink-400 rounded-full flex items-center justify-center"
               animate={{
-                y: [0, 15, 0],
-                x: [0, 10, 0],
+                y: [0, 15],
+                x: [0, 10],
               }}
               transition={{
-                duration: 4,
+                duration: 2,
                 repeat: Infinity,
+                repeatType: "reverse",
                 type: "spring", stiffness: 50, damping: 10
               }}
             >
@@ -383,8 +386,8 @@ export function ModernHeroSection() {
       <motion.div 
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{
-          y: [0, 10, 0],
-          opacity: [0.5, 1, 0.5],
+          y: [0, 10],
+          opacity: [0.5, 1],
         }}
         transition={{
           duration: 2,
@@ -396,7 +399,7 @@ export function ModernHeroSection() {
           <motion.div 
             className="w-1 h-3 bg-white rounded-full mt-2"
             animate={{
-              y: [0, 16, 0],
+              y: [0, 16],
             }}
             transition={{
               duration: 1.5,

@@ -120,9 +120,9 @@ export function ModernServicesSection() {
         <motion.div
           className="absolute top-20 left-20 w-64 h-64 bg-purple-100 rounded-full blur-3xl opacity-50"
           animate={{
-            scale: [1, 1.2, 1],
-            x: [0, 30, 0],
-            y: [0, -20, 0],
+            scale: [1, 1.2],
+            x: [0, 30],
+            y: [0, -20],
           }}
           transition={{
             duration: 8,
@@ -133,9 +133,9 @@ export function ModernServicesSection() {
         <motion.div
           className="absolute bottom-20 right-20 w-48 h-48 bg-blue-100 rounded-full blur-3xl opacity-40"
           animate={{
-            scale: [1, 1.3, 1],
-            x: [0, -40, 0],
-            y: [0, 30, 0],
+            scale: [1, 1.3],
+            x: [0, -40],
+            y: [0, 30],
           }}
           transition={{
             duration: 10,
@@ -331,8 +331,8 @@ export function ModernServicesSection() {
               <motion.div
                 className="absolute top-6 right-6 w-4 h-4 bg-yellow-300 rounded-full"
                 animate={{
-                  scale: [1, 1.2, 1],
-                  opacity: [0.7, 1, 0.7],
+                  scale: [1, 1.2],
+                  opacity: [0.7, 1],
                 }}
                 transition={{
                   duration: 2,
@@ -343,8 +343,8 @@ export function ModernServicesSection() {
               <motion.div
                 className="absolute bottom-6 left-6 w-6 h-6 bg-pink-300 rounded-full"
                 animate={{
-                  scale: [1, 1.3, 1],
-                  opacity: [0.5, 1, 0.5],
+                  scale: [1, 1.3],
+                  opacity: [0.5, 1],
                 }}
                 transition={{
                   duration: 3,

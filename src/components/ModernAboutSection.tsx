@@ -46,7 +46,7 @@ export function ModernAboutSection() {
         <motion.div
           className="absolute top-20 right-20 w-64 h-64 bg-purple-200 rounded-full blur-3xl opacity-30"
           animate={{
-            scale: [1, 1.2, 1],
+            scale: [1, 1.2],
             rotate: [0, 180, 360],
           }}
           transition={{
@@ -58,8 +58,8 @@ export function ModernAboutSection() {
         <motion.div
           className="absolute bottom-20 left-20 w-48 h-48 bg-blue-200 rounded-full blur-3xl opacity-30"
           animate={{
-            scale: [1, 1.3, 1],
-            x: [0, 50, 0],
+            scale: [1, 1.3],
+            x: [0, 50],
           }}
           transition={{
             duration: 15,
@@ -230,8 +230,8 @@ export function ModernAboutSection() {
                 <motion.div
                   className="absolute top-6 right-6 w-6 h-6 bg-yellow-300 rounded-full"
                   animate={{
-                    scale: [1, 1.2, 1],
-                    opacity: [0.7, 1, 0.7],
+                    scale: [1, 1.2],
+                    opacity: [0.7, 1],
                   }}
                   transition={{
                     duration: 2,
@@ -242,8 +242,8 @@ export function ModernAboutSection() {
                 <motion.div
                   className="absolute bottom-6 left-6 w-4 h-4 bg-pink-300 rounded-full"
                   animate={{
-                    scale: [1, 1.3, 1],
-                    opacity: [0.5, 1, 0.5],
+                    scale: [1, 1.3],
+                    opacity: [0.5, 1],
                   }}
                   transition={{
                     duration: 3,
