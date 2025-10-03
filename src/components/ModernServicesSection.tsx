@@ -206,11 +206,12 @@ export function ModernServicesSection() {
                     <motion.div
                       className={`w-16 h-16 ${service.bgColor} rounded-2xl flex items-center justify-center shadow-lg`}
                       animate={{
-                        rotate: [0, 5, -5, 0],
+                        rotate: [0, 5],
                       }}
                       transition={{
-                        duration: 4,
+                        duration: 2,
                         repeat: Infinity,
+                        repeatType: "reverse",
                         type: "spring", stiffness: 50, damping: 10,
                         delay: index * 0.5
                       }}

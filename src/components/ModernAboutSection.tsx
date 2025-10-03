@@ -47,7 +47,7 @@ export function ModernAboutSection() {
           className="absolute top-20 right-20 w-64 h-64 bg-purple-200 rounded-full blur-3xl opacity-30"
           animate={{
             scale: [1, 1.2],
-            rotate: [0, 180, 360],
+            rotate: [0, 180],
           }}
           transition={{
             duration: 20,
@@ -135,11 +135,12 @@ export function ModernAboutSection() {
                 <motion.div
                   className={`w-16 h-16 mx-auto rounded-full ${stat.bg} flex items-center justify-center mb-4`}
                   animate={{
-                    rotate: [0, 5, -5, 0],
+                    rotate: [0, 5],
                   }}
                   transition={{
-                    duration: 4,
+                    duration: 2,
                     repeat: Infinity,
+                    repeatType: "reverse",
                     type: "spring", stiffness: 50, damping: 10,
                     delay: index * 0.5
                   }}

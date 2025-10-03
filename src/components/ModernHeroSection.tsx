@@ -95,7 +95,7 @@ export function ModernHeroSection() {
           className="absolute top-1/2 left-1/3 w-48 h-48 bg-blue-400 rounded-full blur-3xl opacity-15"
           animate={{
             scale: [1, 1.1],
-            rotate: [0, 180, 360],
+            rotate: [0, 180],
           }}
           transition={{
             duration: 12,
@@ -252,11 +252,12 @@ export function ModernHeroSection() {
                   <a href="tel:+15551234567">
                     <motion.span
                       animate={{
-                        rotate: [0, 10, -10, 0],
+                        rotate: [0, 5],
                       }}
                       transition={{
                         duration: 2,
                         repeat: Infinity,
+                        repeatType: "reverse",
                         type: "spring", stiffness: 50, damping: 10
                       }}
                     >
@@ -352,7 +353,7 @@ export function ModernHeroSection() {
               className="absolute -top-6 -right-6 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center"
               animate={{
                 y: [0, -20],
-                rotate: [0, 180, 360],
+                rotate: [0, 180],
               }}
               transition={{
                 duration: 6,
