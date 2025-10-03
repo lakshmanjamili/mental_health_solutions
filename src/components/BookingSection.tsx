@@ -126,8 +126,8 @@ export function BookingSection() {
 
         {/* Packages */}
         <div className="mb-16">
-          <h3 className="text-3xl font-bold text-center text-gray-900 mb-12">Choose Your Package</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <h3 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 sm:mb-12">Choose Your Package</h3>
+          <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
             {packages.map((pkg, index) => (
               <Card 
                 key={index} 
@@ -165,7 +165,7 @@ export function BookingSection() {
                     ))}
                   </ul>
                   <Button 
-                    className={`w-full ${pkg.popular ? 'bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700' : 'bg-gray-900 hover:bg-gray-800'} text-white`}
+                    className={`w-full ${pkg.popular ? 'bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700' : 'bg-gray-900 hover:bg-gray-800'} text-white min-h-[50px] touch-manipulation text-lg sm:text-base`}
                     onClick={() => handlePackageSelect(pkg.name)}
                   >
                     {formData.preferredPackage === pkg.name ? 'Selected' : 'Select Package'}

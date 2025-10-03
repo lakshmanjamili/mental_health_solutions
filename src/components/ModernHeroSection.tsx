@@ -36,7 +36,7 @@ export function ModernHeroSection() {
 
   const floatingVariants = {
     animate: {
-      y: [-10, 10, -10],
+      y: [-10, 10],
       transition: {
         duration: 4,
         repeat: Infinity,
@@ -47,7 +47,7 @@ export function ModernHeroSection() {
 
   const pulseVariants = {
     animate: {
-      scale: [1, 1.05, 1],
+      scale: [1, 1.05],
       transition: {
         duration: 2,
         repeat: Infinity,
@@ -66,34 +66,36 @@ export function ModernHeroSection() {
         <motion.div
           className="absolute top-20 left-20 w-64 h-64 bg-purple-400 rounded-full blur-3xl opacity-20"
           animate={{
-            scale: [1, 1.2, 1],
-            x: [0, 50, 0],
-            y: [0, -30, 0],
+            scale: [1, 1.2],
+            x: [0, 50],
+            y: [0, -30],
           }}
           transition={{
-            duration: 8,
+            duration: 4,
             repeat: Infinity,
+            repeatType: "reverse",
             type: "spring", stiffness: 50, damping: 10
           }}
         />
         <motion.div
           className="absolute bottom-20 right-20 w-96 h-96 bg-pink-400 rounded-full blur-3xl opacity-20"
           animate={{
-            scale: [1, 1.3, 1],
-            x: [0, -30, 0],
-            y: [0, 20, 0],
+            scale: [1, 1.3],
+            x: [0, -30],
+            y: [0, 20],
           }}
           transition={{
-            duration: 10,
+            duration: 5,
             repeat: Infinity,
+            repeatType: "reverse",
             type: "spring", stiffness: 50, damping: 10
           }}
         />
         <motion.div
           className="absolute top-1/2 left-1/3 w-48 h-48 bg-blue-400 rounded-full blur-3xl opacity-15"
           animate={{
-            scale: [1, 1.1, 1],
-            rotate: [0, 180, 360],
+            scale: [1, 1.1],
+            rotate: [0, 180],
           }}
           transition={{
             duration: 12,
@@ -150,7 +152,7 @@ export function ModernHeroSection() {
 
               {/* Main headline with typing effect */}
               <motion.h1 
-                className="text-5xl md:text-7xl font-bold leading-tight"
+                className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight"
                 variants={itemVariants}
               >
                 <motion.span
@@ -175,13 +177,13 @@ export function ModernHeroSection() {
                     animate={{ 
                       textShadow: [
                         "0 0 20px rgba(253, 224, 71, 0.5)",
-                        "0 0 40px rgba(253, 224, 71, 0.8)",
-                        "0 0 20px rgba(253, 224, 71, 0.5)"
+                        "0 0 40px rgba(253, 224, 71, 0.8)"
                       ]
                     }}
                     transition={{
-                      duration: 2,
+                      duration: 1,
                       repeat: Infinity,
+                      repeatType: "reverse",
                       type: "spring", stiffness: 50, damping: 10
                     }}
                   >
@@ -192,14 +194,14 @@ export function ModernHeroSection() {
               </motion.h1>
 
               <motion.p 
-                className="text-xl md:text-2xl text-blue-100 leading-relaxed"
+                className="text-lg sm:text-xl md:text-2xl text-blue-100 leading-relaxed"
                 variants={itemVariants}
               >
                 Take the first step toward a balanced, healthier you with 
                 <motion.span 
                   className="text-yellow-300 font-semibold"
-                  animate={{ opacity: [0.7, 1, 0.7] }}
-                  transition={{ duration: 2, repeat: Infinity }}
+                  animate={{ opacity: [0.7, 1] }}
+                  transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
                 >
                   {" "}Dr. Deepti Talluri
                 </motion.span>
@@ -235,7 +237,7 @@ export function ModernHeroSection() {
 
             {/* CTA Buttons */}
             <motion.div 
-              className="flex flex-col sm:flex-row gap-6"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6"
               variants={itemVariants}
             >
               <motion.div
@@ -244,17 +246,18 @@ export function ModernHeroSection() {
               >
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold text-lg px-8 py-4 rounded-full shadow-2xl"
+                  className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold text-lg sm:text-xl px-8 py-4 sm:py-5 rounded-full shadow-2xl min-h-[60px] touch-manipulation"
                   asChild
                 >
                   <a href="tel:+15551234567">
                     <motion.span
                       animate={{
-                        rotate: [0, 10, -10, 0],
+                        rotate: [0, 5],
                       }}
                       transition={{
                         duration: 2,
                         repeat: Infinity,
+                        repeatType: "reverse",
                         type: "spring", stiffness: 50, damping: 10
                       }}
                     >
@@ -273,7 +276,7 @@ export function ModernHeroSection() {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-white bg-white/10 text-white hover:bg-white hover:text-purple-600 backdrop-blur-lg font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300"
+                  className="border-2 border-white bg-white/10 text-white hover:bg-white hover:text-purple-600 backdrop-blur-lg font-semibold text-lg sm:text-xl px-8 py-4 sm:py-5 rounded-full transition-all duration-300 min-h-[60px] touch-manipulation"
                   asChild
                 >
                   <Link href="#about">
@@ -349,8 +352,8 @@ export function ModernHeroSection() {
             <motion.div
               className="absolute -top-6 -right-6 w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center"
               animate={{
-                y: [0, -20, 0],
-                rotate: [0, 180, 360],
+                y: [0, -20],
+                rotate: [0, 180],
               }}
               transition={{
                 duration: 6,
@@ -364,12 +367,13 @@ export function ModernHeroSection() {
             <motion.div
               className="absolute -bottom-6 -left-6 w-16 h-16 bg-pink-400 rounded-full flex items-center justify-center"
               animate={{
-                y: [0, 15, 0],
-                x: [0, 10, 0],
+                y: [0, 15],
+                x: [0, 10],
               }}
               transition={{
-                duration: 4,
+                duration: 2,
                 repeat: Infinity,
+                repeatType: "reverse",
                 type: "spring", stiffness: 50, damping: 10
               }}
             >
@@ -383,8 +387,8 @@ export function ModernHeroSection() {
       <motion.div 
         className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
         animate={{
-          y: [0, 10, 0],
-          opacity: [0.5, 1, 0.5],
+          y: [0, 10],
+          opacity: [0.5, 1],
         }}
         transition={{
           duration: 2,
@@ -396,7 +400,7 @@ export function ModernHeroSection() {
           <motion.div 
             className="w-1 h-3 bg-white rounded-full mt-2"
             animate={{
-              y: [0, 16, 0],
+              y: [0, 16],
             }}
             transition={{
               duration: 1.5,

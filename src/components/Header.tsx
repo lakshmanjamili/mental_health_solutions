@@ -39,10 +39,11 @@ export function Header() {
             <Link href="#contact" className="text-gray-700 hover:text-purple-600 transition-colors duration-300">
               Contact
             </Link>
-        <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white" asChild>
+        <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white min-h-[44px] touch-manipulation" asChild>
           <a href="tel:+15551234567">
             <Phone className="h-4 w-4 mr-2" />
-            Call Now
+            <span className="hidden sm:inline">Call Now</span>
+            <span className="sm:hidden">Call</span>
           </a>
         </Button>
           </nav>
@@ -88,9 +89,9 @@ export function Header() {
               >
                 Contact
               </Link>
-              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white w-full" asChild>
+              <Button className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700 text-white w-full min-h-[50px] touch-manipulation text-lg" asChild>
                 <a href="tel:+15551234567">
-                  <Phone className="h-4 w-4 mr-2" />
+                  <Phone className="h-5 w-5 mr-2" />
                   Call Now
                 </a>
               </Button>
