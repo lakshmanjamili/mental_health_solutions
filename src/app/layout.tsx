@@ -10,6 +10,9 @@ export const metadata: Metadata = {
   title: "Mental Fitness Solutions LLC - Clarity begins with caring",
   description: "Clarity begins with caring for your Emotional and mental well-being. Take the first step toward a balanced, healthier you. Professional mental health coaching by Dr. Deepti Talluri.",
   keywords: "mental health, coaching, therapy, anxiety, depression, wellness, Dr. Deepti Talluri",
+  icons: {
+    icon: '/favicon.ico',
+  },
   openGraph: {
     title: "Mental Fitness Solutions LLC",
     description: "Clarity begins with caring for your Emotional and mental well-being",
