@@ -150,7 +150,7 @@ export function ModernHeroSection() {
 
               {/* Main headline with typing effect */}
               <motion.h1 
-                className="text-5xl md:text-7xl font-bold leading-tight"
+                className="text-4xl sm:text-5xl md:text-7xl font-bold leading-tight"
                 variants={itemVariants}
               >
                 <motion.span
@@ -192,7 +192,7 @@ export function ModernHeroSection() {
               </motion.h1>
 
               <motion.p 
-                className="text-xl md:text-2xl text-blue-100 leading-relaxed"
+                className="text-lg sm:text-xl md:text-2xl text-blue-100 leading-relaxed"
                 variants={itemVariants}
               >
                 Take the first step toward a balanced, healthier you with 
@@ -235,7 +235,7 @@ export function ModernHeroSection() {
 
             {/* CTA Buttons */}
             <motion.div 
-              className="flex flex-col sm:flex-row gap-6"
+              className="flex flex-col sm:flex-row gap-4 sm:gap-6"
               variants={itemVariants}
             >
               <motion.div
@@ -244,7 +244,7 @@ export function ModernHeroSection() {
               >
                 <Button 
                   size="lg" 
-                  className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold text-lg px-8 py-4 rounded-full shadow-2xl"
+                  className="bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold text-lg sm:text-xl px-8 py-4 sm:py-5 rounded-full shadow-2xl min-h-[60px] touch-manipulation"
                   asChild
                 >
                   <a href="tel:+15551234567">
@@ -273,7 +273,7 @@ export function ModernHeroSection() {
                 <Button 
                   variant="outline" 
                   size="lg" 
-                  className="border-2 border-white bg-white/10 text-white hover:bg-white hover:text-purple-600 backdrop-blur-lg font-semibold text-lg px-8 py-4 rounded-full transition-all duration-300"
+                  className="border-2 border-white bg-white/10 text-white hover:bg-white hover:text-purple-600 backdrop-blur-lg font-semibold text-lg sm:text-xl px-8 py-4 sm:py-5 rounded-full transition-all duration-300 min-h-[60px] touch-manipulation"
                   asChild
                 >
                   <Link href="#about">

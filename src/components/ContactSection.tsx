@@ -41,32 +41,32 @@ export function ContactSection() {
             </div>
 
             {/* Contact Methods */}
-            <div className="grid md:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6 max-w-2xl mx-auto">
               <Card className="hover-lift border-t-4 border-t-purple-600">
-                <CardContent className="p-6 text-center">
-                  <a href="mailto:deepti@mentalfitnesssolutions.com" className="block group">
-                    <div className="bg-purple-100 p-3 rounded-full group-hover:bg-purple-200 transition-colors w-fit mx-auto mb-4">
-                      <Mail className="h-6 w-6 text-purple-600" />
+                <CardContent className="p-6 sm:p-8 text-center">
+                  <a href="mailto:deepti@mentalfitnesssolutions.com" className="block group touch-manipulation min-h-[120px] flex flex-col justify-center">
+                    <div className="bg-purple-100 p-4 sm:p-3 rounded-full group-hover:bg-purple-200 transition-colors w-fit mx-auto mb-4">
+                      <Mail className="h-8 w-8 sm:h-6 sm:w-6 text-purple-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Email Us</h4>
-                      <p className="text-purple-600 font-semibold hover:text-purple-800 mb-1">deepti@mentalfitnesssolutions.com</p>
-                      <p className="text-sm text-gray-500">Click to send email</p>
+                      <h4 className="font-semibold text-gray-900 mb-2 text-lg sm:text-base">Email Us</h4>
+                      <p className="text-purple-600 font-semibold hover:text-purple-800 mb-1 text-sm sm:text-base break-all">deepti@mentalfitnesssolutions.com</p>
+                      <p className="text-sm text-gray-500">Tap to send email</p>
                     </div>
                   </a>
                 </CardContent>
               </Card>
 
               <Card className="hover-lift border-t-4 border-t-blue-600">
-                <CardContent className="p-6 text-center">
-                  <a href="tel:+15551234567" className="block group">
-                    <div className="bg-blue-100 p-3 rounded-full group-hover:bg-blue-200 transition-colors w-fit mx-auto mb-4">
-                      <Phone className="h-6 w-6 text-blue-600" />
+                <CardContent className="p-6 sm:p-8 text-center">
+                  <a href="tel:+15551234567" className="block group touch-manipulation min-h-[120px] flex flex-col justify-center">
+                    <div className="bg-blue-100 p-4 sm:p-3 rounded-full group-hover:bg-blue-200 transition-colors w-fit mx-auto mb-4">
+                      <Phone className="h-8 w-8 sm:h-6 sm:w-6 text-blue-600" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-gray-900 mb-2">Call Us</h4>
-                      <p className="text-blue-600 font-semibold hover:text-blue-800 mb-1">(555) 123-4567</p>
-                      <p className="text-sm text-gray-500">Click to call directly</p>
+                      <h4 className="font-semibold text-gray-900 mb-2 text-lg sm:text-base">Call Us</h4>
+                      <p className="text-blue-600 font-semibold hover:text-blue-800 mb-1 text-xl sm:text-base">(555) 123-4567</p>
+                      <p className="text-sm text-gray-500">Tap to call directly</p>
                     </div>
                   </a>
                 </CardContent>
