@@ -177,13 +177,13 @@ export function ModernHeroSection() {
                     animate={{ 
                       textShadow: [
                         "0 0 20px rgba(253, 224, 71, 0.5)",
-                        "0 0 40px rgba(253, 224, 71, 0.8)",
-                        "0 0 20px rgba(253, 224, 71, 0.5)"
+                        "0 0 40px rgba(253, 224, 71, 0.8)"
                       ]
                     }}
                     transition={{
-                      duration: 2,
+                      duration: 1,
                       repeat: Infinity,
+                      repeatType: "reverse",
                       type: "spring", stiffness: 50, damping: 10
                     }}
                   >
