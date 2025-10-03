@@ -36,7 +36,7 @@ export function ModernServicesSection() {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }
+      transition: { duration: 0.8, type: "spring", stiffness: 100, damping: 15 }
     }
   };
 
@@ -46,7 +46,7 @@ export function ModernServicesSection() {
       scale: 1,
       opacity: 1,
       rotateY: 0,
-      transition: { duration: 0.6, ease: [0.25, 0.1, 0.25, 1] }
+      transition: { duration: 0.6, type: "spring", stiffness: 120, damping: 20 }
     }
   };
 
@@ -127,7 +127,7 @@ export function ModernServicesSection() {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: [0.4, 0, 0.2, 1]
+            type: "spring", stiffness: 50, damping: 10
           }}
         />
         <motion.div
@@ -140,7 +140,7 @@ export function ModernServicesSection() {
           transition={{
             duration: 10,
             repeat: Infinity,
-            ease: [0.4, 0, 0.2, 1]
+            type: "spring", stiffness: 50, damping: 10
           }}
         />
       </div>
@@ -211,7 +211,7 @@ export function ModernServicesSection() {
                       transition={{
                         duration: 4,
                         repeat: Infinity,
-                        ease: [0.4, 0, 0.2, 1],
+                        type: "spring", stiffness: 50, damping: 10,
                         delay: index * 0.5
                       }}
                     >
@@ -337,7 +337,7 @@ export function ModernServicesSection() {
                 transition={{
                   duration: 2,
                   repeat: Infinity,
-                  ease: [0.4, 0, 0.2, 1]
+                  type: "spring", stiffness: 50, damping: 10
                 }}
               />
               <motion.div
@@ -349,7 +349,7 @@ export function ModernServicesSection() {
                 transition={{
                   duration: 3,
                   repeat: Infinity,
-                  ease: [0.4, 0, 0.2, 1],
+                  type: "spring", stiffness: 50, damping: 10,
                   delay: 1
                 }}
               />
