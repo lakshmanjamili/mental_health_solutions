@@ -3,7 +3,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { GraduationCap, Heart, Target, Award } from "lucide-react";
-import Image from "next/image";
 
 export function AboutSection() {
   return (
@@ -37,7 +36,7 @@ export function AboutSection() {
                 internal conflicts that may be limiting your potential.
               </p>
               <p className="text-lg text-gray-600 leading-relaxed">
-                Whether you're struggling with anxiety, depression, trauma, low self-esteem, grief, or chronic stress, 
+                Whether you&apos;re struggling with anxiety, depression, trauma, low self-esteem, grief, or chronic stress, 
                 we provide a safe, compassionate space for healing and growth. We focus on uncovering emotional blockages, 
                 improving emotional regulation, and enhancing self-awareness to empower you to lead a more balanced and fulfilling life.
               </p>

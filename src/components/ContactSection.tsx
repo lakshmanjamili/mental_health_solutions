@@ -31,7 +31,7 @@ export function ContactSection() {
           <div className="space-y-8 animate-fade-in text-center">
             <div>
               <h3 className="text-3xl font-bold text-gray-900 mb-6">
-                Let's Start Your Healing Journey
+                Let&apos;s Start Your Healing Journey
               </h3>
               <p className="text-lg text-gray-600 leading-relaxed mb-8 max-w-3xl mx-auto">
                 Whether you&apos;re ready to book a session or have questions about our services, 

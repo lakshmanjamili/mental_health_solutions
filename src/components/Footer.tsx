@@ -27,14 +27,14 @@ export function Footer() {
               Take the first step toward a balanced, healthier you.
             </p>
             <div className="flex space-x-4">
-              <Button variant="outline" size="icon" className="border-gray-600 hover:bg-purple-600 hover:border-purple-600">
-                <Instagram className="h-4 w-4" />
-              </Button>
-              <Button variant="outline" size="icon" className="border-gray-600 hover:bg-blue-600 hover:border-blue-600">
-                <Twitter className="h-4 w-4" />
-              </Button>
               <Button variant="outline" size="icon" className="border-gray-600 hover:bg-green-600 hover:border-green-600">
                 <Mail className="h-4 w-4" />
+              </Button>
+              <Button variant="outline" size="icon" className="border-gray-600 hover:bg-blue-600 hover:border-blue-600">
+                <Phone className="h-4 w-4" />
+              </Button>
+              <Button variant="outline" size="icon" className="border-gray-600 hover:bg-purple-600 hover:border-purple-600">
+                <Heart className="h-4 w-4" />
               </Button>
             </div>
           </div>
