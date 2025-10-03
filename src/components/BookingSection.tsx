@@ -68,7 +68,7 @@ export function BookingSection() {
   };
 
   return (
-    <section id="booking" className="section-padding bg-gray-50">
+    <section id="booking" className="section-padding bg-gray-50 -mt-1">
       <div className="container">
         {/* Section Header */}
         <div className="text-center mb-16 animate-slide-up">

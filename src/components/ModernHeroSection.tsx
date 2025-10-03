@@ -57,7 +57,7 @@ export function ModernHeroSection() {
   };
 
   return (
-    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900">
+    <section className="relative min-h-screen flex items-center overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-900 -mb-1">
       {/* Animated Background */}
       <AnimatedBackground />
       
