@@ -198,8 +198,8 @@ export function ModernHeroSection() {
                 Take the first step toward a balanced, healthier you with 
                 <motion.span 
                   className="text-yellow-300 font-semibold"
-                  animate={{ opacity: [0.7, 1, 0.7] }}
-                  transition={{ duration: 2, repeat: Infinity }}
+                  animate={{ opacity: [0.7, 1] }}
+                  transition={{ duration: 1, repeat: Infinity, repeatType: "reverse" }}
                 >
                   {" "}Dr. Deepti Talluri
                 </motion.span>
