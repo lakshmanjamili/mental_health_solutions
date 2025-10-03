@@ -30,7 +30,7 @@ export function ModernHeroSection() {
     visible: {
       y: 0,
       opacity: 1,
-      transition: { duration: 0.8, ease: "easeOut" }
+      transition: { duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }
     }
   };
 
@@ -40,7 +40,7 @@ export function ModernHeroSection() {
       transition: {
         duration: 4,
         repeat: Infinity,
-        ease: "easeInOut"
+        ease: [0.4, 0, 0.2, 1]
       }
     }
   };
@@ -51,7 +51,7 @@ export function ModernHeroSection() {
       transition: {
         duration: 2,
         repeat: Infinity,
-        ease: "easeInOut"
+        ease: [0.4, 0, 0.2, 1]
       }
     }
   };
@@ -73,7 +73,7 @@ export function ModernHeroSection() {
           transition={{
             duration: 8,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: [0.4, 0, 0.2, 1]
           }}
         />
         <motion.div
@@ -86,7 +86,7 @@ export function ModernHeroSection() {
           transition={{
             duration: 10,
             repeat: Infinity,
-            ease: "easeInOut"
+            ease: [0.4, 0, 0.2, 1]
           }}
         />
         <motion.div
@@ -182,7 +182,7 @@ export function ModernHeroSection() {
                     transition={{
                       duration: 2,
                       repeat: Infinity,
-                      ease: "easeInOut"
+                      ease: [0.4, 0, 0.2, 1]
                     }}
                   >
                     caring
@@ -255,7 +255,7 @@ export function ModernHeroSection() {
                       transition={{
                         duration: 2,
                         repeat: Infinity,
-                        ease: "easeInOut"
+                        ease: [0.4, 0, 0.2, 1]
                       }}
                     >
                       📞
@@ -355,7 +355,7 @@ export function ModernHeroSection() {
               transition={{
                 duration: 6,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: [0.4, 0, 0.2, 1]
               }}
             >
               <Sparkles className="h-6 w-6 text-black" />
@@ -370,7 +370,7 @@ export function ModernHeroSection() {
               transition={{
                 duration: 4,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: [0.4, 0, 0.2, 1]
               }}
             >
               <Heart className="h-8 w-8 text-white" />
@@ -389,7 +389,7 @@ export function ModernHeroSection() {
         transition={{
           duration: 2,
           repeat: Infinity,
-          ease: "easeInOut"
+          ease: [0.4, 0, 0.2, 1]
         }}
       >
         <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center backdrop-blur-lg">
@@ -401,7 +401,7 @@ export function ModernHeroSection() {
             transition={{
               duration: 1.5,
               repeat: Infinity,
-              ease: "easeInOut"
+              ease: [0.4, 0, 0.2, 1]
             }}
           />
         </div>
